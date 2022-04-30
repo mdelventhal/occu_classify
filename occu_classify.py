@@ -379,7 +379,7 @@ After that, you can click the **Download results** button to download the classi
 You can also click on
 the **Add to hive mind** button to contribute your classifications to an ongoing collaborative project to make robust classifications.
 Providing your name and e-mail address is optional.
-You can see the results of this project, including a list of who else has contributed, by clicking [this link](# "Link to be added.").
+You can see the results of this project, including a list of who else has contributed, by clicking [this link](https://mattdelventhal.com/project/collaborative_classify/ "Collaborative classify").
 
 Below the analysis results, you may click the **Test the model** button. This will launch an algorithm which uses a bootstrap method to 
 evaluate how reliable the extrapolated results are likely to be.
@@ -501,7 +501,7 @@ if methodology.checkbox("Top ten weights for fifth component"):
 
 
 
-intro.write('*[Click here](# "Link to be added.") to see a collaborative project based on the cumulative responses to this app.*')
+intro.write('*[Click here](https://mattdelventhal.com/project/collaborative_classify/ "Collaborative classify") to see a collaborative project based on the cumulative responses to this app.*')
 intro.write('*An explanation of the methodology and downloadable raw data can be found by clicking the* ***Methodology*** *tab at the bottom of this page.*')
 sample_size = sample_controls.slider("Sample Size",40,100,step=20,value=40)
 st.session_state['curpage'] = min(st.session_state['curpage'],int(sample_size/10)-1)
@@ -647,7 +647,7 @@ if st.session_state["step1_done"]:
         file_name=attribute + '_occu_classify.csv',
         mime='text/csv',
         )
-    contributeresults.write('Contribute your classifications to [this collaborative project](# "To be added.").')
+    contributeresults.write('Contribute your classifications to [this collaborative project](https://mattdelventhal.com/project/collaborative_classify/ "Collaborative classify").')
     hivemindcols = contributeresults.columns([5,5,2])
     connectstatus = contributeresults.empty()
     connectstatus.write("**Status:**" + st.session_state["submissionstatus"][attribute])
